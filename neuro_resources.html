@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerPoint Presentations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .ppt-box {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            width: 200px;
+            cursor: pointer;
+            transition: box-shadow 0.3s;
+        }
+        .ppt-box:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Download Presentations</h1>
+<div class="container">
+    <div class="ppt-box" onclick="window.location.href='EEG.pptx'">
+        <img src="IMAGE_URL_1" alt="Presentation 1">
+        <h3>Presentation Title 1</h3>
+    </div>
+    <div class="ppt-box" onclick="window.location.href='URL_TO_YOUR_SECOND_PPT'">
+        <img src="IMAGE_URL_2" alt="Presentation 2">
+        <h3>Presentation Title 2</h3>
+    </div>
+</div>
+
+</body>
+</html>
